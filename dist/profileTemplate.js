@@ -1,10 +1,16 @@
 function executeTemplate(colleague) {
-  return new Promise(() => {
-    var info = "";
 
-    if (occupation === "Manager") {
-      var phoneNumber = colleague;
-      info = `<div class="listContainer">
+    return new Promise(() => {
+      var fullName = colleague.nameReturn();
+      var occupation = colleague.roleReturn();
+      var id = colleague.IDReturn();
+      var email = colleague.emailReturn();
+      var info = "";
+  
+      if (occupation === "Manager") {
+        var phoneNumber = colleague.phoneNumberReturn();
+        info =
+      `<div class="listContainer">
         <div class="containerMain">
             <div class="card-body">
               <h1>${fullName}</h1>
@@ -17,7 +23,7 @@ function executeTemplate(colleague) {
             </div>
           </div>
         </div>`;
-    }
+      } 
   });
 }
 
