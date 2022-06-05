@@ -42,6 +42,24 @@ function executeTemplate(colleague) {
           </div>
         </div>`;
       } 
+
+      else {
+        var education = colleague.schoolReturn();
+        info = 
+      `<div class="listContainer">
+        <div class="containerMain">
+            <div class="card-body">
+              <h1>${fullName}</h1>
+              <h2>Intern</h2>
+              <ul>
+                <p>ID Number: ${id}</p>
+                <p>Email Address: ${email}</p>
+                <p>School: ${education}</p>
+              </ul>
+            </div>
+          </div>
+        </div>`;
+      }
   });
 }
 
