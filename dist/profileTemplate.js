@@ -24,6 +24,24 @@ function executeTemplate(colleague) {
           </div>
         </div>`;
       } 
+
+      else if (occupation === "Engineer") {
+        var githubAccount = colleague.githubReturn();
+        info = 
+      `<div class="listContainer">
+        <div class="containerMain">
+            <div class="card-body">
+              <h1>${fullName}</h1>
+              <h2>Engineer</h2>
+              <ul>
+                <p>ID Number: ${id}</p>
+                <p>Email Address: ${email}</p>
+                <p>Github: ${githubAccount}</p>
+              </ul>
+            </div>
+          </div>
+        </div>`;
+      } 
   });
 }
 
