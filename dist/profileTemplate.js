@@ -60,6 +60,9 @@ function executeTemplate(colleague) {
           </div>
         </div>`;
       }
+
+      console.log("added colleague");
+      resolve(info);
   });
 }
 
