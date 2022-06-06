@@ -1,6 +1,6 @@
 function executeTemplate(colleague) {
 
-    return new Promise(() => {
+    return new Promise((resolve, reject) => {
       var fullName = colleague.nameReturn();
       var occupation = colleague.roleReturn();
       var id = colleague.IDReturn();
